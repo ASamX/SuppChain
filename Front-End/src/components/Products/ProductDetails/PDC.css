@@ -1,0 +1,134 @@
+.main-cont {
+  padding-bottom: 20px; /* Add some padding below the content */
+  margin-bottom: 20px; /* Add some space between cards */
+}
+
+.main-cont .wrapper {
+  height: 550px;
+  width: 1000px;
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 8.5%;
+  margin-left: 25%;
+}
+
+.main-cont .product-img {
+  float: left;
+  height: 550px;
+  width: 500px;
+}
+
+.main-cont .product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.main-cont .product-info {
+  float: left;
+  height: 550px;
+  width: 500px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.main-cont .product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.main-cont .product-text h2,
+.main-cont .product-text p,
+.main-cont .price {
+  border-bottom: 1px solid #e0e0e0; /* Add gray line under each text element */
+}
+
+.main-cont .product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+
+.main-cont .product-text h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.main-cont .product-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.main-cont .product-text p {
+  margin: 0 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 20px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.main-cont .price {
+  display: inline-block;
+  font-family: 'Suranna', serif;
+  font-size: 50px;
+  margin-left: 40px;
+}
+
+.main-cont .product-price-btn button:hover {
+  background-color: #79b0a1;
+}
+
+.main-cont .view:hover {
+  background-color: #100ad9;
+}
+.main-cont .edit:hover {
+  background-color: #dc8800;
+}
+
+.main-cont .delete:hover {
+  background-color: #be0000;
+}
+
+.main-cont .man:hover {
+  background-color: #0b27d9;
+}
+.main-cont .add-main-cat:hover {
+  background-color: #007f08;
+}
+
+.main-cont .button {
+  padding: 10px 30px 10px;
+  margin-top: 20%;
+}
+.main-cont .view {
+  background-color: #108be7;
+}
+.main-cont .edit {
+  background-color: #ffaf01;
+  width: 47%;
+  height: 8vh;
+  font-size: 20px;
+  margin: 10px;
+}
+.main-cont .delete {
+  background-color: #ff0101;
+  width: 47%;
+  height: 8vh;
+  font-size: 20px;
+  margin: 10px;
+}
+.main-cont .man {
+  background-color: #0a71e0;
+  width: 100%;
+  height: 8vh;
+  font-size: 20px;
+  margin: 10px;
+}

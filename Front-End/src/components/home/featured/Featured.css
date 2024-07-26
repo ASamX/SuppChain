@@ -1,0 +1,30 @@
+.featured {
+  background-color: #000;
+}
+.featured h1{
+  background: linear-gradient(to right, #007bff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.featured label{
+  color: #ffffffb1;
+}
+.featured p{
+  color: #ffffffb1;
+}
+.featured .box {
+  box-shadow: 0 0 20px 0 rgba(112,121,138,.35);
+  border-radius: 6px;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.featured .box:hover{
+  box-shadow: 0 0 5px 3px rgba(15, 114, 190, 0.6);
+}
+.featured img {
+  width: 65px;
+  height: 65px;
+  margin: auto;
+}

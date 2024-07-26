@@ -1,0 +1,103 @@
+/* Sidebar styles */
+
+.sidebar-container {
+  width: 15%;
+  height: 100vh;
+  background: #1e1e2f;
+  /* color: #000; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  z-index: 100;
+  transition: 0.5s;
+  border-right: 5px solid #fff;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFF;
+  transition: background-color 0.3s;
+  margin: 14px;
+  position: relative;
+}
+
+.nav-link::before,
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.15em; /* Use em instead of px for a responsive line height */
+  background-color: #FFF;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link::after {
+  left: 0;
+  transform-origin: bottom right;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+span {
+  font-size: 16px;
+}
+
+/* Dark mode styles */
+.dark .sidebar-container {
+  background: #000;
+  color: #fff;
+}
+
+.dark .nav-link {
+  color: #fff;
+}
+
+.dark .nav-link:hover::before,
+.dark .nav-link:hover::after {
+  background-color: #fff;
+}   
+
+/* Increase the scale factor for higher zoom levels */
+@media (min--moz-device-pixel-ratio: 2),
+     (-webkit-min-device-pixel-ratio: 2),
+     (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi) {
+  .nav-link::before,
+  .nav-link::after {
+      transform: scaleX(0.5); /* Adjust the scale factor as needed */
+  }
+}
+
+@media (max-width: 1200px) {
+  .sidebar-container {
+    display: none;
+  }
+  
+}

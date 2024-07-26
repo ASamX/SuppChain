@@ -1,0 +1,4063 @@
+{
+	"info": {
+		"_postman_id": "77f6fef1-5098-4163-8dc1-48c68e51a9f6",
+		"name": "SCM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26973875"
+	},
+	"item": [
+		{
+			"name": "Factory Admin",
+			"item": [
+				{
+					"name": "Manufactory",
+					"item": [
+						{
+							"name": "Inventory",
+							"item": [
+								{
+									"name": "Product",
+									"item": [
+										{
+											"name": "Products",
+											"item": [
+												{
+													"name": "delete Product",
+													"request": {
+														"auth": {
+															"type": "bearer",
+															"bearer": [
+																{
+																	"key": "token",
+																	"value": "{{token}}",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{base_url}}/FactoryAdminProduct/2",
+															"host": [
+																"{{base_url}}"
+															],
+															"path": [
+																"FactoryAdminProduct",
+																"2"
+															]
+														}
+													},
+													"response": []
+												},
+												{
+													"name": "create Product",
+													"request": {
+														"auth": {
+															"type": "bearer",
+															"bearer": [
+																{
+																	"key": "token",
+																	"value": "{{token}}",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "POST",
+														"header": [],
+														"body": {
+															"mode": "raw",
+															"raw": "{\r\n    \"name\": \"fsefdsddd\",\r\n    \"description\": \"sdffdsf\",\r\n    \"price\": 50.20,\r\n    \"discount_price\": 30.20,\r\n    \"quantity\": 20,\r\n    \"active\": true,\r\n    \"raw_material_name\": \"wood\",\r\n    \"raw_material_quantity_kg\": 10\r\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{base_url}}/FactoryAdminProduct/childCategory_id/2",
+															"host": [
+																"{{base_url}}"
+															],
+															"path": [
+																"FactoryAdminProduct",
+																"childCategory_id",
+																"2"
+															]
+														}
+													},
+													"response": []
+												},
+												{
+													"name": "update Product",
+													"request": {
+														"auth": {
+															"type": "bearer",
+															"bearer": [
+																{
+																	"key": "token",
+																	"value": "{{token}}",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "PATCH",
+														"header": [],
+														"body": {
+															"mode": "raw",
+															"raw": "{\r\n    \"name\": \"namsdsde\",\r\n    \"description\": \"descsripdddddtion\",\r\n    \"price\": 500.50,\r\n    \"quantity\": 20,\r\n    \"discount_price\": 500.50,\r\n    \"active\": false\r\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{base_url}}/FactoryAdminProduct/2",
+															"host": [
+																"{{base_url}}"
+															],
+															"path": [
+																"FactoryAdminProduct",
+																"2"
+															]
+														}
+													},
+													"response": []
+												}
+											]
+										},
+										{
+											"name": "Product Size",
+											"item": [
+												{
+													"name": "All Products Size",
+													"request": {
+														"auth": {
+															"type": "bearer",
+															"bearer": [
+																{
+																	"key": "token",
+																	"value": "{{token}}",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{base_url}}/FactoryAdminProductSize/product/1",
+															"host": [
+																"{{base_url}}"
+															],
+															"path": [
+																"FactoryAdminProductSize",
+																"product",
+																"1"
+															]
+														}
+													},
+													"response": []
+												},
+												{
+													"name": "delete Product Size",
+													"request": {
+														"auth": {
+															"type": "bearer",
+															"bearer": [
+																{
+																	"key": "token",
+																	"value": "{{token}}",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{base_url}}/FactoryAdminProductSize/2",
+															"host": [
+																"{{base_url}}"
+															],
+															"path": [
+																"FactoryAdminProductSize",
+																"2"
+															]
+														}
+													},
+													"response": []
+												},
+												{
+													"name": "create Product Size",
+													"request": {
+														"auth": {
+															"type": "bearer",
+															"bearer": [
+																{
+																	"key": "token",
+																	"value": "{{token}}",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "POST",
+														"header": [],
+														"body": {
+															"mode": "raw",
+															"raw": "{\r\n    \"length\": 100,\r\n    \"width\": 50,\r\n    \"height\": 70\r\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{base_url}}/FactoryAdminProductSize/product/1",
+															"host": [
+																"{{base_url}}"
+															],
+															"path": [
+																"FactoryAdminProductSize",
+																"product",
+																"1"
+															]
+														}
+													},
+													"response": []
+												}
+											]
+										},
+										{
+											"name": "Product Color",
+											"item": [
+												{
+													"name": "All Products Color",
+													"request": {
+														"auth": {
+															"type": "bearer",
+															"bearer": [
+																{
+																	"key": "token",
+																	"value": "{{token}}",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{base_url}}/FactoryAdminProductColor/product/1",
+															"host": [
+																"{{base_url}}"
+															],
+															"path": [
+																"FactoryAdminProductColor",
+																"product",
+																"1"
+															]
+														}
+													},
+													"response": []
+												},
+												{
+													"name": "delete Product Color",
+													"request": {
+														"auth": {
+															"type": "bearer",
+															"bearer": [
+																{
+																	"key": "token",
+																	"value": "{{token}}",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{base_url}}/FactoryAdminProductColor/2",
+															"host": [
+																"{{base_url}}"
+															],
+															"path": [
+																"FactoryAdminProductColor",
+																"2"
+															]
+														}
+													},
+													"response": []
+												},
+												{
+													"name": "create Product Color",
+													"request": {
+														"auth": {
+															"type": "bearer",
+															"bearer": [
+																{
+																	"key": "token",
+																	"value": "{{token}}",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "POST",
+														"header": [],
+														"body": {
+															"mode": "raw",
+															"raw": "{\r\n    \"color\": \"reds\"\r\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{base_url}}/FactoryAdminProductColor/product/1",
+															"host": [
+																"{{base_url}}"
+															],
+															"path": [
+																"FactoryAdminProductColor",
+																"product",
+																"1"
+															]
+														}
+													},
+													"response": []
+												}
+											]
+										},
+										{
+											"name": "Product Image",
+											"item": [
+												{
+													"name": "All Products Image",
+													"request": {
+														"auth": {
+															"type": "bearer",
+															"bearer": [
+																{
+																	"key": "token",
+																	"value": "{{token}}",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{base_url}}/FactoryAdminProductImage/product/1",
+															"host": [
+																"{{base_url}}"
+															],
+															"path": [
+																"FactoryAdminProductImage",
+																"product",
+																"1"
+															]
+														}
+													},
+													"response": []
+												},
+												{
+													"name": "delete Product Image",
+													"request": {
+														"auth": {
+															"type": "bearer",
+															"bearer": [
+																{
+																	"key": "token",
+																	"value": "{{token}}",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{base_url}}/FactoryAdminProductImage/1",
+															"host": [
+																"{{base_url}}"
+															],
+															"path": [
+																"FactoryAdminProductImage",
+																"1"
+															]
+														}
+													},
+													"response": []
+												},
+												{
+													"name": "create Product Image",
+													"request": {
+														"auth": {
+															"type": "bearer",
+															"bearer": [
+																{
+																	"key": "token",
+																	"value": "{{token}}",
+																	"type": "string"
+																}
+															]
+														},
+														"method": "POST",
+														"header": [],
+														"body": {
+															"mode": "formdata",
+															"formdata": [
+																{
+																	"key": "image",
+																	"type": "file",
+																	"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/1567481.png"
+																}
+															]
+														},
+														"url": {
+															"raw": "{{base_url}}/FactoryAdminProductImage/product/1",
+															"host": [
+																"{{base_url}}"
+															],
+															"path": [
+																"FactoryAdminProductImage",
+																"product",
+																"1"
+															]
+														}
+													},
+													"response": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "Inventory Materials",
+									"item": [
+										{
+											"name": "delete Material",
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{token}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{base_url}}/inventoryMaterials/factoryAdmin/2",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"inventoryMaterials",
+														"factoryAdmin",
+														"2"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "Material by id",
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{token}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{base_url}}/inventoryMaterials/factoryAdmin/1",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"inventoryMaterials",
+														"factoryAdmin",
+														"1"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "create Material",
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{token}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"name\":\"wood\",\r\n    \"quantity_kg\":\"10\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{base_url}}/inventoryMaterials/factoryAdmin/supplier_id/1",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"inventoryMaterials",
+														"factoryAdmin",
+														"supplier_id",
+														"1"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "update Material",
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{token}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PATCH",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"name\":\"wood10\",\r\n    \"quantity_kg\":\"10\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{base_url}}/inventoryMaterials/factoryAdmin/2",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"inventoryMaterials",
+														"factoryAdmin",
+														"2"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "schedule",
+					"item": [
+						{
+							"name": "delete schedule",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/schedule/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"schedule",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "schedule by id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/schedule/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"schedule",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All schedules",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/schedule",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"schedule"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update schedule",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\": \"accept\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/schedule/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"schedule",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Order",
+					"item": [
+						{
+							"name": "delete Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/order/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"order",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Order by id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/order/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"order",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"name\",\r\n    \"email\":\"morazaamsa@email.com\",\r\n    \"phone\":\"01090104118\",\r\n    \"address\":\"morazama\",\r\n    \"city\":\"morazama@email.com\",\r\n    \"state\":\"wood\",\r\n    \"zipCode\":\"morazama\",\r\n    \"country\":\"morazama\",\r\n    \"shipping_method\":\"wood\",\r\n    \"shipping_amount\":10.20,\r\n    \"tax_amount\":60.30,\r\n    \"payment_method\":\"morazama\",\r\n    \"notes\":\"wood\",\r\n    \"total\": 1500\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/order",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"order"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "OrderItem",
+					"item": [
+						{
+							"name": "All OrderItems",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/orderItem/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"orderItem",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Rating",
+					"item": [
+						{
+							"name": "average Rating",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/rating/average/product/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"rating",
+										"average",
+										"product",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Rating",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/rating",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"rating"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create Rating",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rating\": 4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/rating/product/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"rating",
+										"product",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Comments",
+					"item": [
+						{
+							"name": "All Comments",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/comment/product/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"comment",
+										"product",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Comment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/comment/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"comment",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create Comment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content\": \"moza farag\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/comment/product/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"comment",
+										"product",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Comment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content\":\"morssazama\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/comment/1/product/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"comment",
+										"1",
+										"product",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"user\",\r\n    \"email\": \"user@gmail.com\",\r\n    \"password\": \"123456789\",\r\n    \"password_confirmation\": \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/user-profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"user-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/logout",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.environment.set('token', responseJson.access_token);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Image",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.environment.set('token', responseJson.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/1567616.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/addImage/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"addImage",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Profile",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.environment.set('token', responseJson.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Admin",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/What-is-Laravel.png",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/editProfile/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"editProfile",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Image",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.environment.set('token', responseJson.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/deleteImage/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"deleteImage",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"pm.environment.set('token', responseJson.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/refresh",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Super Admin",
+			"item": [
+				{
+					"name": "Add Admin",
+					"item": [
+						{
+							"name": "Add Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"ShopAdmin\",\r\n    \"email\": \"ShopAdmin@gmail.com\",\r\n    \"password\": \"123456789\",\r\n    \"role\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/addAdmin",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"addAdmin"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Suppliers",
+					"item": [
+						{
+							"name": "delete Supplier",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/suppliers/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"suppliers",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create Supplier",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "supplier_name",
+											"value": "adasdsadsdd",
+											"type": "text"
+										},
+										{
+											"key": "supplier_email",
+											"value": "moddrdpddf@email.comd",
+											"type": "text"
+										},
+										{
+											"key": "raw_materials",
+											"value": "wood",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01118111118",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/suppliers",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"suppliers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Supplier",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "supplier_name",
+											"value": "morazssax",
+											"type": "text"
+										},
+										{
+											"key": "supplier_email",
+											"value": "morazssa@email.com",
+											"type": "text"
+										},
+										{
+											"key": "raw_materials",
+											"value": "wood",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01117771123",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/suppliers/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"suppliers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Deriver",
+					"item": [
+						{
+							"name": "delete Deriver",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/deriver/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"deriver",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create Deriver",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "adasdsadsdd",
+											"type": "text"
+										},
+										{
+											"key": "car_number",
+											"value": "dasdsds",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01118111118",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/deriver",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"deriver"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All Deriver",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "supplier_name",
+											"value": "adasdsadsdd",
+											"type": "text"
+										},
+										{
+											"key": "supplier_email",
+											"value": "moddrdpddf@email.comd",
+											"type": "text"
+										},
+										{
+											"key": "raw_materials",
+											"value": "wood",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01118111118",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/deriver",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"deriver"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deriver By Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "supplier_name",
+											"value": "adasdsadsdd",
+											"type": "text"
+										},
+										{
+											"key": "supplier_email",
+											"value": "moddrdpddf@email.comd",
+											"type": "text"
+										},
+										{
+											"key": "raw_materials",
+											"value": "wood",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01118111118",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/deriver/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"deriver",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Deriver",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "morazssax",
+											"type": "text"
+										},
+										{
+											"key": "car_number",
+											"value": "morazssa@email.com",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01117771123",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/deriver/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"deriver",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Shipping",
+					"item": [
+						{
+							"name": "update Destination",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "destination",
+											"value": "sadsads",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/shipping/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shipping",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create Shipping",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "destination",
+											"value": "adasdsadsdd",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/shipping/deriver_id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shipping",
+										"deriver_id",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All shipping",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "supplier_name",
+											"value": "adasdsadsdd",
+											"type": "text"
+										},
+										{
+											"key": "supplier_email",
+											"value": "moddrdpddf@email.comd",
+											"type": "text"
+										},
+										{
+											"key": "raw_materials",
+											"value": "wood",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01118111118",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/shipping",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shipping"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Shipping By Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "supplier_name",
+											"value": "adasdsadsdd",
+											"type": "text"
+										},
+										{
+											"key": "supplier_email",
+											"value": "moddrdpddf@email.comd",
+											"type": "text"
+										},
+										{
+											"key": "raw_materials",
+											"value": "wood",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01118111118",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/shipping/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shipping",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get Delivery For Specific Destination",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "supplier_name",
+											"value": "adasdsadsdd",
+											"type": "text"
+										},
+										{
+											"key": "supplier_email",
+											"value": "moddrdpddf@email.comd",
+											"type": "text"
+										},
+										{
+											"key": "raw_materials",
+											"value": "wood",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01118111118",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/shipping/destination/sadsads",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shipping",
+										"destination",
+										"sadsads"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Deriver",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "supplier_name",
+											"value": "morazssax",
+											"type": "text"
+										},
+										{
+											"key": "supplier_email",
+											"value": "morazssa@email.com",
+											"type": "text"
+										},
+										{
+											"key": "raw_materials",
+											"value": "fdgfg",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01117771123",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/shipping/2/deriver_id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shipping",
+										"2",
+										"deriver_id",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Shipping Product",
+					"item": [
+						{
+							"name": "Delete shipping Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/shippingProduct/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shippingProduct",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create shipping Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{base_url}}/shippingProduct/delivery_id/1/product_id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shippingProduct",
+										"delivery_id",
+										"1",
+										"product_id",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All Shipping Product",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "supplier_name",
+											"value": "adasdsadsdd",
+											"type": "text"
+										},
+										{
+											"key": "supplier_email",
+											"value": "moddrdpddf@email.comd",
+											"type": "text"
+										},
+										{
+											"key": "raw_materials",
+											"value": "wood",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01118111118",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/shippingProduct",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shippingProduct"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "shipping Product By Id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "supplier_name",
+											"value": "adasdsadsdd",
+											"type": "text"
+										},
+										{
+											"key": "supplier_email",
+											"value": "moddrdpddf@email.comd",
+											"type": "text"
+										},
+										{
+											"key": "raw_materials",
+											"value": "wood",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01118111118",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/shippingProduct/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shippingProduct",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Products",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "supplier_name",
+											"value": "morazssax",
+											"type": "text"
+										},
+										{
+											"key": "supplier_email",
+											"value": "morazssa@email.com",
+											"type": "text"
+										},
+										{
+											"key": "raw_materials",
+											"value": "fdgfg",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01117771123",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/shippingProduct/1/product_id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shippingProduct",
+										"1",
+										"product_id",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "e-commerce",
+					"item": [
+						{
+							"name": "Categories",
+							"item": [
+								{
+									"name": "Child Category",
+									"item": [
+										{
+											"name": "create child Category",
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{token}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "name",
+															"value": "ali10xxs",
+															"type": "text"
+														},
+														{
+															"key": "description",
+															"value": "sdasd",
+															"type": "text"
+														},
+														{
+															"key": "image",
+															"type": "file",
+															"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/IMG20230914031546.jpg"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{base_url}}/childCategories/1",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"childCategories",
+														"1"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "Main Category",
+									"item": [
+										{
+											"name": "create Main Category",
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{token}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "name",
+															"value": "sdasdss",
+															"type": "text"
+														},
+														{
+															"key": "description",
+															"value": "asdasd",
+															"type": "text"
+														},
+														{
+															"key": "image",
+															"type": "file",
+															"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/1567518.png"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{base_url}}/categories",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"categories"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "Two Categories",
+									"item": [
+										{
+											"name": "delete Category",
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{token}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{base_url}}/categories/3",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"categories",
+														"3"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "update Category",
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{token}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "name",
+															"value": "mohamedFarag",
+															"type": "text"
+														},
+														{
+															"key": "descrption",
+															"value": "sdfsdfd",
+															"type": "text"
+														},
+														{
+															"key": "image",
+															"type": "file",
+															"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/1567481.png"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{base_url}}/categories/2",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"categories",
+														"2"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Admin Update Order",
+							"item": [
+								{
+									"name": "All Orders",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/adminUpdateOrder",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"adminUpdateOrder"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Order by id",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/adminUpdateOrder/2",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"adminUpdateOrder",
+												"2"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update Order",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"name\",\r\n    \"email\":\"morazaamsa@email.com\",\r\n    \"phone\":\"01090104118\",\r\n    \"address\":\"morazama\",\r\n    \"city\":\"morazama@email.com\",\r\n    \"state\":\"wood\",\r\n    \"zipCode\":\"morazama\",\r\n    \"country\":\"morazama\",\r\n    \"shipping_method\":\"wood\",\r\n    \"shipping_amount\":1000.20,\r\n    \"tax_amount\":60.30,\r\n    \"payment_method\":\"morazama\",\r\n    \"status\": \"re\",\r\n    \"notes\":\"wood\",\r\n    \"total\": 1500\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/adminUpdateOrder/5",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"adminUpdateOrder",
+												"5"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Searching For Order",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/adminUpdateOrder/search?search=sasa",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"adminUpdateOrder",
+												"search"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "sasa",
+													"description": "Searching By Name"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Shops",
+					"item": [
+						{
+							"name": "Shop Info",
+							"item": [
+								{
+									"name": "delete Shop",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/shopInfo/superAdmin/2",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"shopInfo",
+												"superAdmin",
+												"2"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "create Shop",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "shop_name",
+													"value": "asdasdas",
+													"type": "text"
+												},
+												{
+													"key": "address",
+													"value": "sdasdas",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/pxfuel.jpg"
+												},
+												{
+													"key": "shopAdmin_id",
+													"value": "4",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_url}}/shopInfo/superAdmin",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"shopInfo",
+												"superAdmin"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update Shop",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "shop_name",
+													"value": "sfasfasfsadsf",
+													"type": "text"
+												},
+												{
+													"key": "address",
+													"value": "fafasfssdfds",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/C:/Users/Mohamed Farag/Downloads/New folder (2)/1567518.png"
+												},
+												{
+													"key": "shopAdmin_id",
+													"value": "4",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_url}}/shopInfo/superAdmin/1",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"shopInfo",
+												"superAdmin",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Retrieval",
+					"item": [
+						{
+							"name": "update Status",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "status",
+											"value": "accept",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/retrieval/updateStatus/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"retrieval",
+										"updateStatus",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "All Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/allUsers",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"allUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Searching For user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/search?search=admin",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "admin",
+									"description": "Searching By Name"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Shop Admin",
+			"item": [
+				{
+					"name": "Sales",
+					"item": [
+						{
+							"name": "delete Sales",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/sales/shopAdmin/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"sales",
+										"shopAdmin",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show Shop Info For Specific Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/sales/shopAdmin/shodAdminInfo",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"sales",
+										"shopAdmin",
+										"shodAdminInfo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create Sales",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product_id\": 1,\r\n    \"quantity\": 10,\r\n    \"shop_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/sales/shopAdmin",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"sales",
+										"shopAdmin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Sales",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product_id\": 1,\r\n    \"quantity\": 20,\r\n    \"shop_id\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/sales/shopAdmin/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"sales",
+										"shopAdmin",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "schedule",
+					"item": [
+						{
+							"name": "create schedule",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"quantity\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/schedule/product_id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"schedule",
+										"product_id",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Retrieval",
+					"item": [
+						{
+							"name": "delete retrieval",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/retrieval/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"retrieval",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "retrieval",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"description\": \"sfdfdsfsdfdd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/retrieval/product_id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"retrieval",
+										"product_id",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update retrieval",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\": \"accept\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/retrieval/1/product_id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"retrieval",
+										"1",
+										"product_id",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "All Users",
+			"item": [
+				{
+					"name": "Shop Info Copy 2",
+					"item": [
+						{
+							"name": "All Shops",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/shopInfo",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shopInfo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Shop by id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/shopInfo/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shopInfo",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Searching For shop Info",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/shopInfo/search?search=asdasdas",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"shopInfo",
+										"search"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "asdasdas",
+											"description": "Searching By Name"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product Copy",
+					"item": [
+						{
+							"name": "Products",
+							"item": [
+								{
+									"name": "All Products",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/product",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"product"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "All category Products",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/product/childCategory_id/2",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"product",
+												"childCategory_id",
+												"2"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Product by id",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/product/1",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"product",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Searching For Product",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/product/search?search=fsefdsddsdssddd",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"product",
+												"search"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "fsefdsddsdssddd",
+													"description": "Searching By Name"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Categories Copy",
+					"item": [
+						{
+							"name": "Child Category",
+							"item": [
+								{
+									"name": "child Categories",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/childCategories/1",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"childCategories",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Main Category",
+							"item": [
+								{
+									"name": "All Main Categories",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/categories",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"categories"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Two Categories",
+							"item": [
+								{
+									"name": "Category by id",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/categories/2",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"categories",
+												"2"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Searching For categories",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/categories/search?search=ali10xxs",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"categories",
+												"search"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "ali10xxs",
+													"description": "Searching By Name"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "SuperAdminAndShopAdmin",
+			"item": [
+				{
+					"name": "Sales",
+					"item": [
+						{
+							"name": "Sales History",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/sales/shop_id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"sales",
+										"shop_id",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sales by id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/sales/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"sales",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Searching For sales",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/sales/search?search=1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"sales",
+										"search"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "1",
+											"description": "Searching By Shop_id"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "SuperAdminAndFactoryAdmin",
+			"item": [
+				{
+					"name": "Inventory Materials",
+					"item": [
+						{
+							"name": "All Materials",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/inventoryMaterials",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"inventoryMaterials"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Searching For inventory Materials",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/inventoryMaterials/search?search=w",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"inventoryMaterials",
+										"search"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "w",
+											"description": "Searching By Name"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Suppliers",
+					"item": [
+						{
+							"name": "All Suppliers",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/suppliers",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"suppliers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Supplier by id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/suppliers/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"suppliers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Searching For Supplier",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/suppliers?search=adasd",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"suppliers"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "adasd",
+											"description": "Searching By Name"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

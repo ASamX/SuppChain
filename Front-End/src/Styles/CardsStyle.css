@@ -1,0 +1,560 @@
+
+
+/*MainCategoriesCard*/
+
+/* .MainCategories .category span:hover {
+  padding: 5% 20%;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.MainCategories .view:hover{
+  background-color: #100ad9;
+}
+.MainCategories .edit:hover{
+  background-color: #dc8800;
+}
+
+.MainCategories .delete:hover{
+  background-color: #be0000;
+}
+
+.MainCategories .add-main-cat:hover{
+  background-color: #007f08;
+}
+
+.MainCategories .category i:hover {
+  font-size: 20px;
+  color: #ff0101;
+}
+
+.MainCategories .text:hover {
+  padding: 25px;
+} 
+
+.MainCategories .box {
+  background-color: #0a0e3f;
+  border-radius: 6px;
+  transition: 0.5s;
+  box-shadow: 0 0 30px 0 rgb(19, 143, 232);
+
+}
+
+.MainCategories .box:hover {
+  box-shadow: 0 0 30px 0 rgba(10, 234, 13, 0.6);
+  cursor: pointer;
+}
+.MainCategories .text {
+  padding: 20px;
+}
+.MainCategories .category span {
+  padding: 4px 15px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+.MainCategories .category i {
+  font-size: 20px;
+  color: #bec7d8;
+}
+.MainCategories p {
+  color: #72809d;
+}
+.MainCategories .text-type {
+  color: #72809d;
+  font-size: 20px;
+}
+.MainCategories .show-more{
+  cursor: pointer;
+  color: #000;
+}
+.MainCategories .button {
+  border-top: 1px solid #e4e8f3;
+  padding: 10px 30px 10px;
+}
+.MainCategories .view{
+  background-color: #108be7;
+}
+.MainCategories .edit{
+  background-color: #ffaf01;
+}
+.MainCategories .delete{
+  background-color: #ff0101;
+}
+.MainCategories .button i {
+  color: white;
+  font-size: 20px;
+}
+.MainCategories .childcat{
+  background-color: rgb(38, 152, 239);
+  margin-right:13px;
+}
+
+.MainCategories img {
+  height: 42vh;
+} */
+.ag-format-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 115px;
+}
+.MainCategories .view:hover{
+  background-color: #100ad9;
+}
+.MainCategories .edit:hover{
+  background-color: #dc8800;
+}
+
+.MainCategories .delete:hover{
+  background-color: #be0000;
+}
+
+.MainCategories .add-main-cat:hover{
+  background-color: #007f08;
+}
+
+.MainCategories .button {
+  /* border-top: 1px solid #e4e8f3; */
+  padding: 10px 30px 10px;
+  background-color: rgba(50, 50, 93, 0.337);
+}
+.MainCategories .view{
+  background-color: #108be7;
+}
+.MainCategories .edit{
+  background-color: #ffaf01;
+}
+.MainCategories .delete{
+  background-color: #ff0101;
+}
+
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  margin-left: 0;
+}
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+  margin: 0 15px 30px;
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow: 0 0 2px 2px rgba(50, 50, 93, 0.8);
+}
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: rgba(50, 50, 93, 0.337);
+  box-shadow: #f9b234;
+  overflow: hidden;
+  position: relative;
+}
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #FFF;
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #3ecd5e;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e30e0e;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+.category-image {
+  width: 100%;
+  height: 250px;
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+/*********************************************************************************/
+
+/*ChildCategoriesCard*/
+
+
+
+
+/*********************************************************************************/
+
+/*AllProductsCard*/
+
+/* .AllProducts .category span:hover {
+  padding: 5% 20%;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+} */
+/* .AllProducts .view:hover{
+  background-color: #100ad9;
+  width: 100%;
+} */
+/* .AllProducts .edit:hover{
+  background-color: #dc8800;
+}
+
+.AllProducts .delete:hover{
+  background-color: #be0000;
+} */
+
+/* .AllProducts .add-child-cat:hover{
+  background-color: #007f08;
+}
+
+.AllProducts .category i:hover {
+  font-size: 20px;
+  color: #ff0101;
+}
+
+.AllProducts .text:hover {
+  padding: 25px;
+}  */
+
+/* .AllProducts .box {
+  background-color: #0a0e3f;
+  border-radius: 6px;
+  transition: 0.5s;
+  box-shadow: 0 0 30px 0 rgb(19, 143, 232);
+}
+
+.AllProducts .box:hover {
+  box-shadow: 0 0 30px 0 rgba(10, 234, 13, 0.6);
+  cursor: pointer;
+}
+.AllProducts .text {
+  padding: 20px;
+} */
+/* .AllProducts .category span {
+  padding: 4px 15px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+.AllProducts .category i {
+  font-size: 20px;
+  color: #bec7d8;
+} */
+
+/* .AllProducts .show-more{
+  cursor: pointer;
+  color: #000;
+}
+.AllProducts .button {
+  border-top: 1px solid #e4e8f3;
+  padding: 10px 30px 10px;
+}
+.AllProducts .view{
+  background-color: #108be7;
+  width: 100%;
+} */
+/* .AllProducts .edit{
+  background-color: #ffaf01;
+}
+.AllProducts .delete{
+  background-color: #ff0101;
+} */
+/* .AllProducts .button i {
+  color: white;
+  font-size: 20px;
+}
+.AllProducts .childcat{
+  background-color: rgb(38, 152, 239);
+  margin-right:13px;
+}
+
+.AllProducts img {
+  height: 42vh;
+} */
+
+
+/*********************************************************************************/
+
+/*ProductsByIdCard*/
+/*  
+.ProductsById .category span:hover {
+  padding: 5% 20%;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+.ProductsById .box {
+  background-color: #0a0e3f;
+  border-radius: 6px;
+  transition: 0.5s;
+  box-shadow: 0 0 30px 0 rgb(19, 143, 232);
+}
+.ProductsById .box:hover {
+  box-shadow: 0 0 30px 0 rgba(10, 234, 13, 0.6);
+  cursor: pointer;
+}
+.ProductsById .text {
+  padding: 20px;
+}
+.ProductsById .text:hover {
+  padding: 25px;
+}
+.ProductsById .category span {
+  padding: 4px 15px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+.ProductsById .category i {
+  font-size: 20px;
+  color: #bec7d8;
+}
+.ProductsById .category i:hover {
+  font-size: 20px;
+  color: #ff0101;
+}
+.ProductsById p {
+  color: #72809d;
+}
+.ProductsById .text-type {
+  color: #72809d;
+  font-size: 20px;
+}
+.ProductsById .show-more{
+  cursor: pointer;
+  color: #000;
+}
+.ProductsById .button {
+  border-top: 1px solid #e4e8f3;
+  padding: 10px 30px 10px;
+}
+.ProductsById .add-product:hover{
+  background-color: #007f08;
+}
+.ProductsById .view{
+  background-color: #108be7;
+  width: 100%;
+}
+.ProductsById .view:hover{
+  background-color: #100ad9;
+  width: 100%;
+} */
+/* .ProductsById .edit{
+  background-color: #ffaf01;
+}
+.ProductsById .delete{
+  background-color: #ff0101;
+} */
+/* .ProductsById .button i {
+  color: white;
+  font-size: 20px;
+}
+.ProductsById .childcat{
+  background-color: rgb(38, 152, 239);
+  margin-right:13px;
+}
+
+.ProductsById img {
+  height: 42vh;
+} */
+
+
+/*********************************************************************************/
+
+/*ProductDetailsCard*/
+ 
+.ProductDetails .category span:hover {
+  padding: 5% 20%;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+.ProductDetails .view:hover{
+  background-color: #100ad9;
+}
+.ProductDetails .edit:hover{
+  background-color: #dc8800;
+}
+
+.ProductDetails .delete:hover{
+  background-color: #be0000;
+}
+
+/* .ProductDetails .add-child-cat:hover{
+  background-color: #007f08;
+} */
+
+.ProductDetails .category i:hover {
+  font-size: 20px;
+  color: #ff0101;
+}
+
+.ProductDetails .text:hover {
+  padding: 25px;
+} 
+
+.ProductDetails .box {
+  background-color: #0a0e3f;
+  border-radius: 6px;
+  transition: 0.5s;
+  box-shadow: 0 0 30px 0 rgb(19, 143, 232);
+}
+
+.ProductDetails .box:hover {
+  box-shadow: 0 0 30px 0 rgba(10, 234, 13, 0.6);
+  cursor: pointer;
+}
+.ProductDetails .content{
+  width: 55vh;
+  margin-left: 33%;
+}
+.ProductDetails .text {
+  padding: 20px;
+}
+.ProductDetails .category span {
+  padding: 4px 15px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+.ProductDetails .category i {
+  font-size: 20px;
+  color: #bec7d8;
+}
+.ProductDetails p {
+  color: #72809d;
+}
+.ProductDetails .text-type {
+  color: #72809d;
+  font-size: 20px;
+}
+.ProductDetails .show-more{
+  cursor: pointer;
+  color: #000;
+}
+.ProductDetails .button {
+  border-top: 1px solid #e4e8f3;
+  padding: 10px 100px 10px;
+}
+.ProductDetails .view{
+  background-color: #108be7;
+}
+.ProductDetails .edit{
+  background-color: #ffaf01;
+}
+.ProductDetails .delete{
+  background-color: #ff0101;
+}
+.ProductDetails .button i {
+  color: white;
+  font-size: 20px;
+}
+.ProductDetails .childcat{
+  background-color: rgb(38, 152, 239);
+  margin-right:13px;
+}
+
+.ProductDetails img {
+  height: 42vh;
+}
+

@@ -1,0 +1,107 @@
+.main-header {
+  background-color: #1e1e2f;
+  height: vh;
+  box-shadow: 0 0 20px 0 rgba(112,121,138,.35);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+}
+.main-header img {
+  width: 170px;
+}
+.main-header a {
+  /* margin-left: 30px; */
+  transition: 0.5s;
+  font-weight: 500;
+  /* color: #ffffffb1; */
+  color: rgb(0, 0, 0);
+}
+.main-header .logo-title:hover {
+  color: rgb(38, 152, 239);
+}
+.main-header span {
+  width: auto;
+  padding: 0px 6px;
+  background-color: rgb(38, 152, 239);
+  border-radius: 50px;
+  color: #ffffff;
+  margin-right: 4px;
+  font-weight: 400;
+}
+.main-header h4 {
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.main-header .logo-title{
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.main-header .logo-title:hover {
+  color: rgb(38, 152, 239);
+  cursor: pointer;
+}
+
+.main-header .toggle {
+  display: none;
+}
+/* 
+.main-header .sign-in-btn {
+  background-color: rgb(38, 152, 239);
+}
+
+.main-header .sign-in-btn:hover {
+  background-color: #231cf0;
+} */
+
+.main-header .logout-btn {
+    width: 50px; /* Set width to match the profile image */
+    height: 50px; /* Set height to match the profile image */
+    background-color: rgba(239, 21, 46, 0);
+    margin-left: 10px;
+    border: 3px solid #c40d0d; /* Set border to white */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header .logout-btn:hover {
+  background-color: #c10404;
+}
+
+@media screen and (max-width: 768px) {
+  .main-header {
+    padding: 0;
+  }
+  .main-header img {
+    margin-top: 30px;
+  }
+  .main-header .button {
+    display: none;
+  }
+  .main-header .nav .flex {
+    display: none;
+  }
+  .main-header .toggle {
+    display: block;
+    margin-top: 20px;
+  }
+  .main-header .small {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: rgb(63, 57, 232);
+    padding: 20px;
+  }
+  .main-header li a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+}

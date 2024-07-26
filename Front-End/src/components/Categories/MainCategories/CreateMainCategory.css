@@ -1,0 +1,239 @@
+/* ContactForm.css */
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin-left: 7%;
+    margin-top: 15%;
+  }
+ .contact-container .anything {
+    font-family: 'Poppins', sans-serif;
+    width: 250px;
+    max-width: 100%;
+    color: #FFF;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 12px;
+} 
+/* .contact-container .anything:hover {
+  color: #645f5f;
+}  */
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+input[type=file]::file-selector-button:hover {
+  background: #092a70;
+}
+/* .contact-container .form-label {
+    color: white;
+    margin-left: 18px;
+  }  */
+  .contact-container .add-warehouse{
+    width: 100%;
+    background: -webkit-linear-gradient(left, #56d8e4, #9f01ea);
+  }
+  .contact-container .btn1:hover{
+    background: -webkit-linear-gradient(left, #359ca5, #630390);
+  }
+  .contact-container .add-main-categories{
+    margin-left: 35%;
+    width: 50%;
+    background: -webkit-linear-gradient(left, #56d8e4, #9f01ea);
+  }
+  
+  .contact-container .container {
+    max-width: none; /* Remove the maximum width */
+    background: rgba(50, 50, 93, 0.1);
+    width: 70%; /* Set width to 100% */
+    height: 100%;
+    padding: 45px 60px 30px 60px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container .container .text {
+    text-align: center;
+    font-size: 41px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .contact-container .container form {
+    padding: 30px 0 0 0;
+  }
+  
+  .contact-container .container form .form-row {
+    display: flex;
+    margin: 32px 0;
+    margin-top: 10px;
+  }
+  
+  .contact-container form .form-row .input-data {
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .contact-container form .form-row .textarea {
+    height: 70px;
+  }
+  
+  .contact-container .input-data input,
+  .contact-container .textarea textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+    caret-color: white; /* Change the caret color to red */
+    color: white;
+  }
+  
+  .contact-container .input-data input:focus ~ label,
+  .contact-container .textarea textarea:focus ~ label,
+  .contact-container .input-data input:valid ~ label,
+  .contact-container .textarea textarea:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #3498db;
+  }
+  
+  .contact-container .textarea textarea {
+    resize: none;
+    padding-top: 10px;
+  }
+  
+  .contact-container .input-data label {
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-container .textarea label {
+    width: 100%;
+    bottom: 40px;
+  }
+  
+  .contact-container .input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+  }
+  
+  .contact-container .input-data {
+    background-color: transparent;
+    color: white;
+    outline: none; /* Remove default focus outline */
+    border-color: transparent; /* Set border color to transparent on focus */
+    font-size: 17px;
+    cursor: pointer;
+  }
+ .contact-container .dropdown {
+  /* border: 1px solid #000; */
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+  caret-color: white; /* Change the caret color to red */
+  color: white;
+}
+  .contact-container .option {
+    color: black;
+  }
+  .contact-container .input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-container .input-data input:focus ~ .underline:before,
+  .contact-container .input-data input:valid ~ .underline:before,
+  .contact-container .textarea textarea:focus ~ .underline:before,
+  .contact-container .textarea textarea:valid ~ .underline:before {
+    transform: scale(1);
+  }
+  
+  .contact-container .submit-btn .input-data {
+    overflow: hidden;
+    height: 45%;
+    width: 25%;
+    padding: 15px;
+    border-radius: 60px;
+  }
+  
+  .contact-container .submit-btn .input-data .inner {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    transition: all 0.4s;
+  }
+  
+  .contact-container .submit-btn .input-data:hover .inner {
+    left: 0;
+  }
+  
+  .contact-container .submit-btn .input-data input {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media (max-width: 700px) {
+    .contact-container .container .text {
+      font-size: 30px;
+    }
+  
+    .contact-container .container form {
+      padding: 10px 0 0 0;
+    }
+  
+    .contact-container .container form .form-row {
+      display: block;
+    }
+  
+    .contact-container form .form-row .input-data {
+      margin: 35px 0!important;
+    }
+  
+    .contact-container .submit-btn .input-data {
+      width: 40%!important;
+    }
+  }
+  

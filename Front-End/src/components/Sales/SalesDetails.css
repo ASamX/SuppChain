@@ -1,0 +1,100 @@
+.canvasjs-chart-credit {
+    display: none !important;
+  }
+  .shop-dashboard{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    margin-left: 17.5%;
+    margin-top: 6%;
+    /* padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px; */
+    /* background-color: #32373a; */
+  }
+  
+  .widget-content .total-amount {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+  }
+  .widget {
+    position: relative;
+  }
+  
+  .widget-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 80px;
+  }
+  
+  .shop-dashboard .row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    /* background-color: #32373a; */
+  }
+  
+  .shop-dashboard .row .chart,
+  .shop-dashboard .row .chartw1,
+  .shop-dashboard .row .chartw2,
+  .shop-dashboard .row .chartw3,
+  .shop-dashboard .row .chartw4 {
+    flex: 1;
+    padding: 1rem;
+    /* border: 5px solid #3a6e88; */
+    margin: 0.5rem;
+    border-radius: 20px;
+    background-color: rgba(50, 50, 93, 0.337);
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .shop-dashboard .row .chart,
+  .shop-dashboard .row .chartw1,
+  .shop-dashboard .row .chartw2,
+  .shop-dashboard .row .chartw3,
+  .shop-dashboard .row .chartw4 {
+    flex: 1;
+    padding: 1rem;
+    /* border: 5px solid #3a6e88; */
+    margin: 0.5rem;
+    border-radius: 20px;
+    background-color: rgba(50, 50, 93, 0.337);
+    color: white;
+    transition: all 0.3s ease;
+  }
+  .shop-dashboard .row .chart:hover,
+  .shop-dashboard .row .chartw1:hover,
+  .shop-dashboard .row .chartw2:hover,
+  .shop-dashboard .row .chartw3:hover,
+  .shop-dashboard .row .chartw4:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 4px 8px rgb(255, 255, 255); */
+    border-color: white;
+  }
+  
+  .shop-dashboard .row .chartw1 {
+    background-color: #0eb15a;
+  }
+  
+  .shop-dashboard .row .chartw2 {
+    background-color: #f9b115;
+  }
+  
+  .shop-dashboard .row .chartw3 {
+    background-color: #e55353;
+  }
+  
+  .shop-dashboard .row .chartw4 {
+    background-color: #3399ff;
+  }
+  
+  .shop-dashboard .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  

@@ -1,0 +1,83 @@
+/*warehouses*/
+
+.warehouses .btn1{
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  margin-left: 40px; 
+}
+
+.warehouses h1{
+  margin-top: 20px;
+  margin-bottom: 20px;  
+  background: linear-gradient(to right, #007bff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.warehouses label{
+  color: #ffffffb1;
+}
+.warehouses p{
+  color: #ffffffb1;
+}
+.warehouses .card__description{
+  color: #ffffff;
+}
+/**********************************************************************************/
+
+/*MainCategories*/
+
+.MainCategories .btn1{
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;  
+  margin-left: 14%;
+}
+.MainCategories h1{
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  margin-left: 30%;
+  background: linear-gradient(to right, #007bff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.MainCategories label{
+  color: #ffffffb1;
+}
+.MainCategories p{
+  color: #ffffffb1;
+  margin-left: 30%;
+}
+.MainCategories .card__description{
+  color: #ffffff;
+}
+/**********************************************************************************/
+
+/*ChildCategories*/
+
+.ChildCategories .btn1{
+  margin-top: 20px;
+  margin-bottom: 20px;  
+}
+.ChildCategories h1{
+  margin-top: 20px;
+  margin-bottom: 20px;  
+  background: linear-gradient(to right, #007bff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ChildCategories label{
+  color: #ffffffb1;
+}
+.ChildCategories p{
+  color: #ffffffb1;
+}
+.ChildCategories .card__description{
+  color: #ffffff;
+}
+/**********************************************************************************/
+
+/***********************************************************************************/
+
+
+
+/***********************************************************************************/

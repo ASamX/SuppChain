@@ -1,0 +1,124 @@
+.ChildCategories .btn1{
+    width: 80%;
+    margin-left: 19%;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+  }
+  .ChildCategories h1{
+    margin-top: 5px;
+    margin-bottom: 5px;  
+    margin-left: 30%;
+    background: linear-gradient(to right, #007bff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .ChildCategories label{
+    color: #ffffffb1;
+  }
+  .ChildCategories p{
+    color: #ffffffb1;
+    margin-left: 30%;
+    margin-bottom: 5px;  
+  }
+  .ChildCategories .card__description{
+    color: #ffffff;
+  }
+
+  .ChildCategories .view:hover{
+    background-color: #100ad9;
+  }
+  .ChildCategories .sf-view:hover{
+    background-color: #100ad9;
+  }
+  .ChildCategories .edit:hover{
+    background-color: #dc8800;
+  }
+  
+  .ChildCategories .delete:hover{
+    background-color: #be0000;
+  }
+  
+  .ChildCategories .add-child-cat:hover{
+    background-color: #007f08;
+  }
+  
+  .ChildCategories .category i:hover {
+    font-size: 20px;
+    color: #ff0101;
+  }
+  
+  
+  .ChildCategories .box {
+    background-color: #FFF;
+    border-radius: 6px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px 0 rgb(19, 143, 232);
+    width: 100%;
+  }
+    
+  .ChildCategories .content{
+    width: 100%;
+    margin-left: 9%;
+  }
+  
+  .ChildCategories .box:hover {
+    box-shadow: 0 0 15px 0 rgba(10, 234, 13, 0.6);
+    cursor: pointer;
+  }
+  .ChildCategories .text {
+    padding: 20px;
+    
+  }
+  .ChildCategories .category span {
+    padding: 4px 15px;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    color: #000;
+  }
+  
+  .ChildCategories .category i {
+    font-size: 20px;
+    color: #bec7d8;
+  }
+
+  .ChildCategories .text-type {
+    color: #72809d;
+    font-size: 20px;
+  }
+  .ChildCategories .show-more{
+    cursor: pointer;
+    color: #2332d7;
+    font-weight: 800;
+  }
+  .ChildCategories .button {
+    border-top: 1px solid #e4e8f3;
+    padding: 10px 30px 10px;
+  }
+  .ChildCategories .view{
+    background-color: #108be7;
+  }
+  .ChildCategories .sf-view{
+    background-color: #108be7;
+    width: 100%;
+  }
+  .ChildCategories .edit{
+    background-color: #ffaf01;
+  }
+  .ChildCategories .delete{
+    background-color: #ff0101;
+  }
+  .ChildCategories .button i {
+    color: white;
+    font-size: 20px;
+  }
+  .ChildCategories .childcat{
+    background-color: rgb(38, 152, 239);
+    margin-right:13px;
+  }
+  
+  .ChildCategories img {
+    height: 42vh;
+  }
+  

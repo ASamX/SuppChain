@@ -1,0 +1,162 @@
+
+.ProductsById .center {
+  height: 100%;
+  width: calc(25% - 20px); /* Adjusted width for each card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px; /* Added margin between cards */
+  margin-top: 3%;
+}
+
+.ProductsById .content {
+  width: 85%; /* Adjust the width according to the container */
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  margin-left: 25%;
+}
+
+.ProductsById .card-title
+{
+ color: #000;
+ margin-top: 15%;
+}
+
+/* End Non-Essential  */
+
+.ProductsById .property-card
+{
+  height:18em;
+  width:14em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  margin-top: 10px;
+  /* -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff; */
+  /* box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff; */
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.ProductsById .property-image
+{
+  height:9em;
+  width:14em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+/* Bottom Card Section */
+
+.ProductsById .property-description
+{
+  background-color: rgb(255, 255, 255);
+  height:9em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+/* Social Icons */
+
+.ProductsById .property-social-icons
+{
+  width:1em;
+  height:1em;
+  background-color:black;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Property Cards Hover States */
+
+.ProductsById .property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.ProductsById .property-card:hover .property-image
+{
+  height:18em;
+}
+
+.ProductsById .property-card:hover .property-social-icons
+{
+  background-color:white;
+}
+
+.ProductsById .property-card:hover .property-social-icons:hover
+{
+  background-color:blue;
+  cursor:pointer;
+}
+
+.property-image-title
+{
+text-align:center;
+position:Relative;
+top:30%;
+opacity:0;
+transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+color:black;
+font-size:1.2em;
+}
+
+.property-card:hover .property-image-title
+{
+opacity:1;
+}
+
+
+.ProductsById .btn1{
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  margin-left: 27.5%; 
+  font-size:medium;
+}
+.ProductsById .products-by-id-heading h1{
+  margin-top: 20px;
+  margin-bottom: 20px;  
+  background: linear-gradient(to right, #007bff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 25%; 
+
+}
+.ProductsById label{
+  color: #ffffffb1;
+}
+.ProductsById p{
+  width: 100%;
+  color: #ffffffb1;
+  margin-left: 13%; 
+}
+/* .ProductsById .card__description{
+  color: #ffffff;
+} */

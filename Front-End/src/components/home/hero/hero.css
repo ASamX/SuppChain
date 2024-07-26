@@ -1,0 +1,65 @@
+.hero {
+  background-image: url("../../../../public/images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.hero h1 {
+  background: linear-gradient(to right, #007bff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
+  margin-bottom: 20px; /* Add margin to separate heading from subtitle */
+}
+
+.hero h2 {
+  color: #ffffffb1;
+  font-size: 30px;
+  margin-bottom: 20px; /* Add margin to separate heading from subtitle */
+}
+
+
+.hero p {
+  color: #ffffffb1;
+  font-size: 24px; /* Adjust the font size of the subtitle */
+}
+
+.hero .btn1 {
+  background-color: rgb(38, 152, 239);
+}
+.hero .logoContainer {
+  display: inline-block;
+  transition: 0.5s; /* Add transition for scaling effect */
+}
+
+.hero .logoContainer:hover {
+  transform: scale(1.2); /* Scale up the container on hover */
+}
+
+.hero .logo {
+  width: 280px;
+  height: auto;
+}
+
+.getstarted {
+  width: 200px;
+  margin-top: 20px;
+  transition:  0.5s; /* Add transition for scaling effect */
+}
+
+.getstarted:hover {
+  width: 300px;
+  transform: scale(1.2); /* Scale up the container on hover */
+}
